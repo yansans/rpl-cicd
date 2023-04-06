@@ -15,6 +15,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pylint
+        pip install flask
     - name: Analysing the code with pylint
       run: |
         pylint test.py --disable=C0114,C0116
